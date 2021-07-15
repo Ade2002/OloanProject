@@ -110,12 +110,33 @@ header nav {
   background-color: #1EA83C;
   width: 150px;
   height: 200px;
+  z-index: 1;
+  -webkit-transition: width 1s;
+  transition: width 1s;
 }
 
 header nav a {
   padding: 10px 0;
   color: #fff;
   display: block;
+  -webkit-transition: width 0.8s;
+  transition: width 0.8s;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+  color: #f1f1f1;
+}
+
+header nav .closebtn {
+  font-size: 35px;
+  float: right;
+  margin: 0 20px 0 0;
+}
+
+header nav .closebtn:hover {
+  text-decoration: none;
+  color: #f1f1f1;
 }
 
 header .fa-bars {
@@ -179,7 +200,7 @@ header .fa-bars {
 }
 
 .home span .btn-dark {
-  background-color: black;
+  background-color: #2F2E41;
 }
 
 .home img {
@@ -373,7 +394,7 @@ header .fa-bars {
 }
 
 .download span .btn-dark {
-  background-color: black;
+  background-color: #2F2E41;
 }
 
 footer {
@@ -467,6 +488,9 @@ footer .foot {
     width: 50%;
     height: auto;
   }
+  header nav .closebtn {
+    display: none;
+  }
   header nav a {
     margin: 0;
     color: #2F2E41;
@@ -475,6 +499,7 @@ footer .foot {
   }
   header nav a:hover {
     text-decoration: underline;
+    color: #1EA83C;
   }
   header nav .btn-dark {
     background: #2F2E41;
@@ -536,18 +561,10 @@ footer .foot {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .home span .btn-success {
-    background-color: #1EA83C;
-  }
   .home span .btn-success:hover {
-    text-decoration: none;
-    background-color: black;
-  }
-  .home span .btn-dark {
-    background-color: black;
+    background-color: #2F2E41;
   }
   .home span .btn-dark:hover {
-    text-decoration: none;
     background-color: #1EA83C;
   }
   .home img {
@@ -659,7 +676,7 @@ footer .foot {
         grid-template-columns: auto auto auto;
     width: 100%;
     height: auto;
-    padding: 2em 7em 0 7em;
+    padding: 3em 7em 0 7em;
   }
   .sellingPoint svg {
     display: block;
@@ -679,7 +696,7 @@ footer .foot {
   .sellingPoint div .sellingBanner {
     width: 40%;
     height: 50px;
-    padding: 50px 0 0 50px;
+    padding: 3em 0 0 1.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -690,9 +707,6 @@ footer .foot {
   }
   .sellingPoint div .sellingBanner h3 {
     text-align: left;
-  }
-  .sellingPoint div .sellingBanner p {
-    width: 5;
   }
   .sellingPoint div .sellingBanner span {
     display: -webkit-box;
@@ -734,19 +748,100 @@ footer .foot {
     background-color: #1EA83C;
   }
   .sellingPoint div .sellingBanner span .btn-success:hover {
-    text-decoration: none;
-    background-color: black;
+    background-color: #2F2E41;
   }
   .sellingPoint div .sellingBanner span .btn-dark {
-    background-color: black;
+    background-color: #2F2E41;
   }
   .sellingPoint div .sellingBanner span .btn-dark:hover {
-    text-decoration: none;
     background-color: #1EA83C;
   }
   .sellingPoint div img {
-    width: 50%;
+    width: 70%;
     height: auto;
+  }
+  .feedback {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 3em 7em 0 7em;
+  }
+  .feedback .img {
+    display: block;
+    margin: auto;
+    width: 60%;
+    height: auto;
+  }
+  .feedback .blackMan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1em 0 0 0;
+  }
+  .feedback .blackMan span {
+    width: 30%;
+    margin: auto;
+  }
+  .feedback .poweredBy img {
+    margin: 0 30px;
+  }
+  .download {
+    background-color: #1EA83C;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 3em 10px 3em 10px;
+  }
+  .download span {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    width: 30%;
+  }
+  .download span a {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 0 20px 0;
+    padding: 1em 2em;
+    height: 50px;
+  }
+  .download span .btn-dark {
+    margin: 1em 0;
+    background-color: #2F2E41;
+  }
+  .download span .btn-dark:hover {
+    background-color: black;
   }
 }
 /*# sourceMappingURL=style.css.map */

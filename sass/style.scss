@@ -88,10 +88,27 @@ header{
         background-color: #1EA83C;
         width: 150px;
         height: 200px;
+        z-index: 1;
+        transition: width 1s;
         a{
             padding: 10px 0;
             color: #fff;
             display: block;
+            transition: width 0.8s;
+
+            &:hover {
+                text-decoration: underline;
+                color: #f1f1f1;
+            }
+        }
+        .closebtn{
+            font-size: 35px;
+            float: right;
+            margin: 0 20px 0 0;
+            &:hover {
+                text-decoration: none;
+                color: #f1f1f1;
+            }
         }
     }
     .fa-bars{
@@ -126,7 +143,7 @@ header{
             background-color: #1EA83C;
         }
         .btn-dark{
-            background-color: black;
+            background-color: #2F2E41;
         }
     }
     img{
@@ -237,7 +254,7 @@ header{
             background-color: #1EA83C;
         }
         .btn-dark{
-            background-color: black;
+            background-color: #2F2E41;
         }
     }
 }
@@ -303,6 +320,9 @@ header{
         background-color: white;
         width: 50%;
         height: auto;
+        .closebtn{
+            display: none;
+        }
         a{
             margin: 0;
             color:#2F2E41;
@@ -310,6 +330,7 @@ header{
             font-weight: 600;
             &:hover {
                 text-decoration: underline;
+                color: #1EA83C;
             }
         }
         .btn-dark{
@@ -353,16 +374,12 @@ header{
             }
         }
         .btn-success{
-            background-color: #1EA83C;
             &:hover {
-                text-decoration: none;
-                background-color: black;
+                background-color: #2F2E41;
             }
         }
         .btn-dark{
-            background-color: black;
             &:hover {
-                text-decoration: none;
                 background-color: #1EA83C;
             }
         }
@@ -451,7 +468,7 @@ header{
     grid-template-columns: auto auto auto;
     width: 100%;
     height: auto;
-    padding: 2em 7em 0 7em;
+    padding: 3em 7em 0 7em;
     svg{
         display: block;
     }
@@ -462,14 +479,11 @@ header{
         .sellingBanner{
             width: 40%; 
             height: 50px;
-            padding: 50px 0 0 50px;
+            padding: 3em 0 0 1.5em;
             display: flex;
             flex-direction: column;
             h3{
                 text-align: left;
-            }
-            p{
-                width: 5;
             }
             span{
                 display: flex;
@@ -491,24 +505,81 @@ header{
                 .btn-success{
                     background-color: #1EA83C;
                     &:hover {
-                        text-decoration: none;
-                        background-color: black;
+                        background-color: #2F2E41;
                     }
                 }
                 .btn-dark{
-                    background-color: black;
+                    background-color: #2F2E41;
                     &:hover {
-                        text-decoration: none;
                         background-color: #1EA83C;
                     }
                 }
             }
         }
         img{
-            width: 50%; 
+            width: 70%; 
             height: auto;
         }
     }
 }
-
+.feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 3em 7em 0 7em;
+    .img{
+        display: block;
+        margin: auto;
+        width: 60%;
+        height: auto;
+    }
+    .blackMan{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 0 0 0;
+        span{
+            width: 30%;
+            margin: auto;
+        }
+        
+    }
+    .poweredBy{
+        img{
+            margin: 0 30px;
+        }
+    }
+}
+.download{
+    background-color: #1EA83C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 3em 10px 3em 10px;
+    span{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        width: 30%;
+        a{
+            
+            justify-content: space-evenly;
+            margin: 0 0 20px 0;
+            padding: 1em 2em;
+                    height: 50px;
+        }
+        .btn-dark{
+            margin: 1em 0;
+            background-color: #2F2E41;
+            &:hover {
+                background-color: black;
+            }
+        }
+    }
+}
 }
