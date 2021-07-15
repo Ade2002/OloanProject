@@ -1,0 +1,514 @@
+:root {
+    --atccolor: #1207AB;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+html {
+    color: #3F3D56;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-position: center;
+}
+::selection {
+    color: #fff;
+    background-color: #1EA83C;
+}
+a,
+button {
+    text-decoration: none;
+    cursor: pointer;
+    border-color: var(--atccolor);
+    text-align: center;
+    color: #3F3D56;
+
+    &:hover {
+        text-decoration: none;
+        color: #1EA83C;
+    }
+}
+img {
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+}
+sup {
+    color: red;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+    h2{
+        margin: 0 0 30px 0;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    h3{
+        margin: 0 0 20px 0;
+        font-weight: 900;
+    }
+    h4{
+        margin: 0 0 20px 0;
+        font-weight: 900;
+
+    }
+    p{
+        margin: 0 0 20px 0;
+    }
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 20px 10px;
+    border-bottom: solid 1px #1EA83C;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    nav{
+        display: none;
+        background-color: #1EA83C;
+        width: 150px;
+        height: 200px;
+        a{
+            padding: 10px 0;
+            color: #fff;
+            display: block;
+        }
+    }
+    .fa-bars{
+        display: block;
+    }
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10em 0 0 0;
+    width: 100%;
+    height: auto;
+    span{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            width: 45%;
+            height: 50px;
+            margin: 0 0 20px 0;
+            span{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .btn-success{
+            background-color: #1EA83C;
+        }
+        .btn-dark{
+            background-color: black;
+        }
+    }
+    img{
+        width: 155px; 
+        height: 158px;
+    }
+}
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    div{
+        span{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+}
+.features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    .featureInvestment{
+        margin-bottom: 0;
+    }
+    .money{
+        display: none;
+    }
+}
+.sellingPoint{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    svg{
+        display: none;
+    }
+    h3{
+        text-align: center;
+        color: #1EA83C;
+    }
+    a{
+        display: none;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+.feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    .img{
+        display: block;
+        margin: auto;
+    }
+    .blackMan{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+.download{
+    background-color: #1EA83C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    span{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            width: 45%;
+            height: 40px;
+            margin: 0 0 20px 0;
+            padding: 20px 5px;
+            span{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+        .btn-success{
+            background-color: #1EA83C;
+        }
+        .btn-dark{
+            background-color: black;
+        }
+    }
+}
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    color: #2F2E4180;
+    .footerNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    a{
+        color: #2F2E4180;
+        margin: 30px 15px;
+    }
+    .foot{
+        margin: 20px 0 50px 0;
+    }
+}
+
+
+@media screen and (min-width: 720px) {
+h2{
+    margin: 0 0 30px 0;
+    font-size: 50px;
+    font-weight: 900;
+}
+h3{
+    font-size: 30px;
+    margin: 0 0 20px 0;
+    font-weight: 900;
+}
+h4{
+    font-size: 25px;
+    margin: 0 0 20px 0;
+    font-weight: 900;
+    
+}
+p{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7em;
+    border-bottom: solid 1px #1EA83C;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: white;
+        width: 50%;
+        height: auto;
+        a{
+            margin: 0;
+            color:#2F2E41;
+            display: inline;
+            font-weight: 600;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .btn-dark{
+            background: #2F2E41;
+            color: white;
+            padding: 1em 2em;
+            &:hover {
+                text-decoration: none;
+                background-color: #1EA83C;
+            }
+        }
+    }
+    .fa-bars{
+        display: none;
+    }
+}
+//header ends
+
+.home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 7em 0 7em;
+    width: 100%;
+    height: auto;
+    span{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            color: white;
+            padding: 1em 2em;
+            height: 50px;
+            margin: 0 0 20px 0;
+            span{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .btn-success{
+            background-color: #1EA83C;
+            &:hover {
+                text-decoration: none;
+                background-color: black;
+            }
+        }
+        .btn-dark{
+            background-color: black;
+            &:hover {
+                text-decoration: none;
+                background-color: #1EA83C;
+            }
+        }
+    }
+    img{
+        width: 655px; 
+        height: 658px;
+    }
+}
+//Home ends
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 20px 0 20px;
+    div{
+        display: flex;
+        span{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h4{
+                    text-align: center;
+                }
+                p{
+                    width: 60%;
+                }
+            }
+            img{
+                display: block;
+                margin: 0;
+            }
+        }
+    }
+}
+// About ends
+
+.features{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 2em 7em 0 7em;
+    background: rgba(30, 168, 60, 0.1);
+    .lead{
+        width: 50%;
+        text-align: center;
+    }
+    div{
+        .featureSavings{
+            display: flex;
+            flex-direction: row;
+            justify-items: center;
+            span{
+                h4{
+                    margin: 0 0 20px 0;
+                }
+                p{
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .featureInvestment{
+        margin-bottom: 0;
+    }
+        img{
+            width: 355px; 
+            height: auto;
+            display: none;
+        }
+    .money{
+        display: block;
+    }
+}
+
+.sellingPoint{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    height: auto;
+    padding: 2em 7em 0 7em;
+    svg{
+        display: block;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .sellingBanner{
+            width: 40%; 
+            height: 50px;
+            padding: 50px 0 0 50px;
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-align: left;
+            }
+            p{
+                width: 5;
+            }
+            span{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    color: white;
+                    padding: 1em 2em;
+                    height: 50px;
+                    margin: 0 0 20px 0;
+                    span{
+                        display: flex;
+                        flex-direction: column;
+                    }
+                }
+                .btn-success{
+                    background-color: #1EA83C;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: black;
+                    }
+                }
+                .btn-dark{
+                    background-color: black;
+                    &:hover {
+                        text-decoration: none;
+                        background-color: #1EA83C;
+                    }
+                }
+            }
+        }
+        img{
+            width: 50%; 
+            height: auto;
+        }
+    }
+}
+
+}
