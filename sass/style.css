@@ -111,16 +111,14 @@ header nav {
   width: 150px;
   height: 200px;
   z-index: 1;
-  -webkit-transition: width 1s;
-  transition: width 1s;
+  -webkit-transition: width 1s ease;
+  transition: width 1s ease;
 }
 
 header nav a {
   padding: 10px 0;
   color: #fff;
   display: block;
-  -webkit-transition: width 0.8s;
-  transition: width 0.8s;
 }
 
 header nav a:hover {
@@ -129,6 +127,9 @@ header nav a:hover {
 }
 
 header nav .closebtn {
+  -webkit-transition: width 0.8s ease;
+  transition: width 0.8s ease;
+  cursor: default;
   font-size: 35px;
   float: right;
   margin: 0 20px 0 0;

@@ -89,19 +89,20 @@ header{
         width: 150px;
         height: 200px;
         z-index: 1;
-        transition: width 1s;
+        transition: width 1s ease;
         a{
             padding: 10px 0;
             color: #fff;
             display: block;
-            transition: width 0.8s;
-
+            
             &:hover {
                 text-decoration: underline;
                 color: #f1f1f1;
             }
         }
         .closebtn{
+            transition: width 0.8s ease;
+            cursor: default;
             font-size: 35px;
             float: right;
             margin: 0 20px 0 0;
