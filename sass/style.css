@@ -404,6 +404,115 @@ header .fa-bars {
 }
 
 /* Feedback ends */
+/* Download begins */
+.download {
+  background-color: #1EA83C;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+}
+
+.download span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 10px;
+}
+
+.download span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  width: 45%;
+  height: 40px;
+  margin: 0 0 20px 0;
+  padding: 20px 5px;
+}
+
+.download span a span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.download span .btn-success {
+  background-color: #1EA83C;
+}
+
+.download span .btn-dark {
+  background-color: #2F2E41;
+}
+
+/* Download ends */
+/* Footer begins */
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+  color: #2F2E4180;
+}
+
+footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer a {
+  color: #2F2E4180;
+  margin: 30px 15px;
+}
+
+footer .foot {
+  margin: 20px 0 50px 0;
+}
+
+/* Footer ends */
 @media screen and (min-width: 720px) {
   h2 {
     margin: 0 0 30px 0;

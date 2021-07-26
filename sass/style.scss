@@ -279,8 +279,71 @@ li {
         flex-direction: column-reverse;
     }
    }
-
    /* Feedback ends */
+
+   /* Download begins */
+   .download{
+    background-color: #1EA83C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    span{
+        display: flex;
+        justify-content: space-between;
+        font-size: 10px;
+        a{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            width: 45%;
+            height: 40px;
+            margin: 0 0 20px 0;
+            padding: 20px 5px;
+            span{
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+        }
+        
+        .btn-success{
+            background-color: #1EA83C;
+        }
+        .btn-dark{
+            background-color: #2F2E41;
+        }
+     }
+    }
+   /* Download ends */
+
+   /* Footer begins */
+footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    color: #2F2E4180;
+    .footerNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    a{
+        color: #2F2E4180;
+        margin: 30px 15px;
+    }
+    .foot{
+        margin: 20px 0 50px 0;
+    }
+}
+   /* Footer ends */
 
 @media screen and (min-width: 720px) {
 h2{
