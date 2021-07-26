@@ -134,6 +134,8 @@ header{
         }
     }
 }
+
+
 .features{
     display: flex;
     align-items: center;
@@ -155,6 +157,7 @@ header{
     width: 100%;
     height: auto;
     padding: 5em 10px 0 10px;
+    
     svg{
         display: none;
     }

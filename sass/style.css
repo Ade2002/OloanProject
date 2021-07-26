@@ -86,6 +86,7 @@ p {
   margin: 0 0 20px 0;
 }
 
+/* Header Begins */
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -167,6 +168,8 @@ header .fa-bars {
   display: block;
 }
 
+/* Header ends */
+/* Home Begins */
 .home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,6 +268,142 @@ header .fa-bars {
   background-color: #2F2E41;
 }
 
+/* Home ends */
+/* About Begins */
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+}
+
+.about .middleText {
+  display: none;
+}
+
+.about div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about div span img {
+  display: block;
+  margin: auto;
+}
+
+/* About ends */
+/* FeAture Begins */
+.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+}
+
+.features .featureInvestment {
+  margin-bottom: 0;
+}
+
+.features .money {
+  display: none;
+}
+
+/* FeAture ends */
+/* Selling Points Begins */
+.sellingPoint {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+}
+
+.sellingPoint svg {
+  display: none;
+}
+
+.sellingPoint h3 {
+  text-align: center;
+  color: #1EA83C;
+}
+
+.sellingPoint a {
+  display: none;
+}
+
+.sellingPoint img {
+  display: block;
+  margin: auto;
+}
+
+/* Selling ends */
+/* Feedback begins */
+.feedback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 10px 0 10px;
+}
+
+.feedback .img {
+  display: block;
+  margin: auto;
+}
+
+.feedback .blackMan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+/* Feedback ends */
 @media screen and (min-width: 720px) {
   h2 {
     margin: 0 0 30px 0;

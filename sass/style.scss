@@ -72,6 +72,7 @@ li {
     p{
         margin: 0 0 20px 0;
     }
+    /* Header Begins */
     header{
         display: flex;
         align-items: center;
@@ -128,14 +129,14 @@ li {
                 color: #f1f1f1;
             }
         }
-    }
-    
+    } 
     .fa-bars{
         display: block;
     }
     } 
-    
-    
+   /* Header ends */
+   
+  /* Home Begins */  
 .home{
     display: flex;
     flex-direction: column;
@@ -180,7 +181,7 @@ li {
                 flex-direction: column;
             }
         }
-        
+
         .btn-success{
             background-color: #1EA83C;
         }
@@ -189,6 +190,97 @@ li {
         }
     }
 }
+
+   /* Home ends */
+
+
+   /* About Begins */
+   .about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    .middleText{
+        display: none;
+    }
+    
+    div{
+        span{
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            img{
+                display: block;
+                margin: auto;
+            }
+        }
+    }
+   }
+   /* About ends */
+
+   /* FeAture Begins */
+   .features{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    .featureInvestment{
+        margin-bottom: 0;
+    }
+    .money{
+        display: none;
+    }
+   }
+   /* FeAture ends */
+
+   /* Selling Points Begins */
+   .sellingPoint{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    svg{
+        display: none;
+    }
+    h3{
+        text-align: center;
+        color: #1EA83C;
+    }
+    a{
+        display: none;
+    }
+    img{
+        display: block;
+        margin: auto;
+    }
+   }
+   /* Selling ends */
+
+   /* Feedback begins */
+   .feedback{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 5em 10px 0 10px;
+    .img{
+        display: block;
+        margin: auto;
+    }
+    .blackMan{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+   }
+
+   /* Feedback ends */
 
 @media screen and (min-width: 720px) {
 h2{
