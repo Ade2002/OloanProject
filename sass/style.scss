@@ -221,6 +221,7 @@ li {
    /* About ends */
 
    /* FeAture Begins */
+
    .features{
     display: flex;
     align-items: center;
@@ -233,6 +234,9 @@ li {
     }
     .money{
         display: none;
+    }
+    #lastimage{
+        width: 50%;
     }
    }
    /* FeAture ends */
@@ -526,6 +530,8 @@ header{
             display: flex;
             flex-direction: row;
             justify-items: center;
+            justify-content: space-evenly;
+            margin: 0 0  20px 0;
             span{
                 h4{
                     margin: 0 0 20px 0;
@@ -546,6 +552,7 @@ header{
         }
     .money{
         display: block;
+        width: 20%;
     }
 }
 

@@ -334,6 +334,10 @@ header .fa-bars {
   display: none;
 }
 
+.features #lastimage {
+  width: 50%;
+}
+
 /* FeAture ends */
 /* Selling Points Begins */
 .sellingPoint {
@@ -754,6 +758,10 @@ footer .foot {
         -ms-flex-direction: row;
             flex-direction: row;
     justify-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin: 0 0  20px 0;
   }
   .features div .featureSavings span h4 {
     margin: 0 0 20px 0;
@@ -771,6 +779,7 @@ footer .foot {
   }
   .features .money {
     display: block;
+    width: 20%;
   }
   .sellingPoint {
     display: -ms-grid;
