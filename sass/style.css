@@ -109,11 +109,13 @@ header {
 header nav {
   display: none;
   background-color: #1EA83C;
-  width: 150px;
-  height: 200px;
+  width: 100%;
+  height: 100vh;
   z-index: 1;
   -webkit-transition: width 1s ease;
   transition: width 1s ease;
+  position: absolute;
+  top: 0.1em;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -143,6 +145,10 @@ header nav a {
   padding: 10px 0;
   color: #fff;
   display: block;
+  font-size: 36px;
+  text-align: left;
+  padding: 0 0 0 20px;
+  margin: 20px 0 0 0;
 }
 
 header nav a:hover {
@@ -154,7 +160,7 @@ header nav .closebtn {
   -webkit-transition: width 0.8s ease;
   transition: width 0.8s ease;
   cursor: default;
-  font-size: 35px;
+  font-size: 45px;
   float: right;
   margin: 0 20px 0 0;
 }
@@ -568,6 +574,9 @@ footer .foot {
     background-color: white;
     width: 50%;
     height: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
   }
   header nav .closebtn {
     display: none;
@@ -577,6 +586,9 @@ footer .foot {
     color: #2F2E41;
     display: inline;
     font-weight: 600;
+    font-size: 16px;
+    text-align: left;
+    padding: 20px 0 0 0;
   }
   header nav a:hover {
     text-decoration: underline;
@@ -586,6 +598,7 @@ footer .foot {
     background: #2F2E41;
     color: white;
     padding: 1em 2em;
+    margin-top: 0;
   }
   header nav .btn-dark:hover {
     text-decoration: none;

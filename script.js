@@ -1,11 +1,15 @@
-document.getElementById("openNav").onclick = function() {
-   document.getElementById("openNav").style.display = "none"
-   document.getElementById("sideNav").setAttribute("style", 'width:250px; display:block;')
+let sideNav = document.getElementById("sideNav");
+let openNav =  document.getElementById("openNav");
+let closeNav = document.getElementById("closeNav")
+
+openNav.onclick = function() {
+    openNav.style.display = "none";
+    sideNav.style.display = "block";
    
 }
-document.getElementById("closeNav").onclick = function() {
-    document.getElementById("sideNav").setAttribute("style", 'width:0')
-    document.getElementById("openNav").style.display = "block"
+closeNav.onclick = function() {
+    sideNav.style.display = "none";
+    openNav.style.display = "block";
 }
 
 
