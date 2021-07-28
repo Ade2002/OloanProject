@@ -526,6 +526,8 @@ header{
                 }
                 p{
                     width: 60%;
+                    #more {display: none;}
+                    #dots{cursor:pointer;}
                 }
             }
             img{

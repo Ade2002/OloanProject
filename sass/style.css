@@ -754,6 +754,12 @@ footer .foot {
   .about div span div p {
     width: 60%;
   }
+  .about div span div p #more {
+    display: none;
+  }
+  .about div span div p #dots {
+    cursor: pointer;
+  }
   .about div span img {
     display: block;
     margin: 0;

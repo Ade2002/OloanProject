@@ -11,7 +11,33 @@
         <link rel="stylesheet" href="sass/style.css">
     </head>
     <body>
+<!-- Messenger Chat plugin Code -->
+<div id="fb-root"></div>
 
+<!-- Your Chat plugin code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "105341675127176");
+  chatbox.setAttribute("attribution", "biz_inbox");
+
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v11.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
         <!--Header Begins-->
 
         <header>
@@ -126,7 +152,15 @@
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
                             amet, consectetur at hjll 
-                            adipiscing elit. 
+                            adipiscing elit. <span id="dots">...</span>
+                            <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, 
+                                ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum 
+                                augue ut aliquet. Nunc sagittis dictum nisi, 
+                                sed ullamcorper ipsum dignissim ac. In at libero sed 
+                                nunc venenatis imperdiet sed ornare turpis. Donec vitae 
+                                dui eget tellus gravida venenatis. 
+                                Integer fringilla congue eros non fermentum. 
+                                Sed dapibus pulvinar nibh tempor porta.</span>
                         </p>
                     </div>
                 </span>
@@ -143,7 +177,15 @@
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
                             amet, consectetur at hjll 
-                            adipiscing elit. 
+                            adipiscing elit. <span id="dots">...</span>
+                            <span id="more">erisque enim ligula venenatis dolor. 
+                                Maecenas nisl est, ultrices nec congue eget, 
+                                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
+                                 In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                                 Donec vitae dui eget tellus gravida 
+                                venenatis. Integer fringilla congue eros non fermentum. 
+                                Sed dapibus pulvinar nibh tempor porta.</span>
                         </p>
                     </div>
                 </span>
@@ -161,7 +203,15 @@
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
                             amet, consectetur at hjll 
-                            adipiscing elit. 
+                            adipiscing elit.<span id="dots">...</span>
+                            <span id="more">erisque enim ligula venenatis dolor. 
+                                Maecenas nisl est, ultrices nec congue eget, 
+                                auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
+                                Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
+                                In at libero sed nunc venenatis imperdiet sed ornare turpis. 
+                                Donec vitae dui eget tellus gravida venenatis. 
+                                Integer fringilla congue eros non fermentum. 
+                                Sed dapibus pulvinar nibh tempor porta.</span>
                         </p>
                     </div>
                 </span>

@@ -71,4 +71,34 @@ function scrollFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
+  var dots = document.getElementById("dots");
+var moreText = document.getElementById("more");
+
+dots.onclick = function() {
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    moreText.style.display = "inline";
+  }
+ }
+  moreText.onclick = function() {
+  if (moreText.style.display === "inline") {
+    dots.style.display = "inline";
+    moreText.style.display = "none";
+  }
   }
