@@ -6,6 +6,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title> Oloan.ng </title>
+        <link rel="shortcut icon" href="img/Logo.svg"type="image/x-icon">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="sass/style.css">
@@ -18,26 +19,7 @@
 <div id="fb-customer-chat" class="fb-customerchat">
 </div>
 
-<script>
-  var chatbox = document.getElementById('fb-customer-chat');
-  chatbox.setAttribute("page_id", "105341675127176");
-  chatbox.setAttribute("attribution", "biz_inbox");
 
-  window.fbAsyncInit = function() {
-    FB.init({
-      xfbml            : true,
-      version          : 'v11.0'
-    });
-  };
-
-  (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));
-</script>
         <!--Header Begins-->
 
         <header>
@@ -67,7 +49,7 @@
     <!--Header ends-->
 
     
-    <button id="scrollTop"> &#8593; </button>
+    <button id="scrollTop" title="Scroll To Top"> &#8593; </button>
     
     <!--Home Begins-->
         <section class="home" id="home">
@@ -138,8 +120,8 @@
             <p class="lead">
                 Lorem ipsum dolor sit amet, consectetur adipi &shy; scing eli
             </p>
-            <div>
 
+            <div>
                 <span class="savings">
                     <img src="img/savings.svg" alt="savings" width="255" height="258" />
                     <span class="middle">
@@ -152,8 +134,8 @@
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
                             amet, consectetur at hjll 
-                            adipiscing elit. <span id="dots">...</span>
-                            <span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, 
+                            adipiscing elit. <span id="dots" class="dots">See More...</span>
+                            <span id="more" class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, 
                                 ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum 
                                 augue ut aliquet. Nunc sagittis dictum nisi, 
                                 sed ullamcorper ipsum dignissim ac. In at libero sed 
@@ -177,8 +159,8 @@
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
                             amet, consectetur at hjll 
-                            adipiscing elit. <span id="dots">...</span>
-                            <span id="more">erisque enim ligula venenatis dolor. 
+                            adipiscing elit. <span id="dots" class="dots">See More...</span>
+                            <span id="more" class="more">erisque enim ligula venenatis dolor. 
                                 Maecenas nisl est, ultrices nec congue eget, 
                                 auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
                                 Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac.
@@ -202,9 +184,9 @@
                         </h4>
                         <p>
                             Lorem ipsum dolor sit fed &shy; 
-                            amet, consectetur at hjll 
-                            adipiscing elit.<span id="dots">...</span>
-                            <span id="more">erisque enim ligula venenatis dolor. 
+                            amet, consectetur at hjll   
+                            adipiscing elit.<span id="dots" class="dots">See More...</span>
+                            <span id="more" class="more">erisque enim ligula venenatis dolor. 
                                 Maecenas nisl est, ultrices nec congue eget, 
                                 auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. 
                                 Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. 
@@ -233,8 +215,8 @@
                 Ut enim ad minim veniam, quis nostrud. 
             </p>
 
-            <div>
-                <span class="featureSavings">
+            <div class="sliderContainer">
+                <span class="featureSavings slide">
                     <span>
                         <h4>
                             Savings
@@ -248,7 +230,7 @@
                     <img src="img/money_hand-removebg-preview.png" alt="featureInvestment" srcset="" class="money" />
                 </span>
                     
-                <span class="featureSavings">
+                <span class="featureSavings slide">
                     <span>
 
                         <h4>
@@ -264,7 +246,7 @@
 
                 </span>
 
-                <span class="featureSavings">
+                <span class="featureSavings slide">
                     <span>
                         <h4>
                             Investment

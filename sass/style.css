@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap);
 :root {
   --atccolor: #1207AB;
   font-size: 16px;
@@ -23,7 +24,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-position: center;
 }
 
@@ -314,6 +315,12 @@ header .fa-bars {
   margin: auto;
 }
 
+.about div span img:hover {
+  text-decoration: none;
+  -webkit-box-shadow: 20px 20px 20px 20px #888888;
+          box-shadow: 20px 20px 20px 20px #888888;
+}
+
 /* About ends */
 /* FeAture Begins */
 .features {
@@ -523,6 +530,97 @@ footer .foot {
 }
 
 /* Footer ends */
+/* Landing Page Ends */
+/*Sign Up Begins */
+.MotherSignUp_ {
+  width: 100%;
+  padding: 2em 1em;
+}
+
+.MotherSignUp_ .signUp {
+  width: 90%;
+  margin: auto;
+}
+
+.MotherSignUp_ .signUp .signBold {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 1.2em 0 0.5em 0;
+}
+
+.MotherSignUp_ .signUp .form-group {
+  margin: 2em 0 0 0;
+  width: 100%;
+}
+
+.MotherSignUp_ .signUp .form-group label {
+  font-size: 20px;
+  color: #3F3D56;
+  display: block;
+  width: 100%;
+}
+
+.MotherSignUp_ .signUp .form-group input {
+  border-bottom: 1px solid #3F3D56;
+  color: #3F3D56;
+  width: 100%;
+}
+
+.MotherSignUp_ .signUp .form-group .eye {
+  text-align: right;
+}
+
+.MotherSignUp_ .signUp .form-group .eye .fa-eye {
+  display: none;
+}
+
+.MotherSignUp_ .signUp .form-group .padlock {
+  text-align: right;
+}
+
+.MotherSignUp_ .signUp .form-group .padlock .fa-unlock-alt {
+  display: none;
+}
+
+.MotherSignUp_ .signUp .form-group .lead {
+  font-size: 10px;
+  margin-top: 0.2em;
+}
+
+.MotherSignUp_ .signUp .enterCode .enterInput {
+  text-align: center;
+  margin-bottom: 3em;
+}
+
+.MotherSignUp_ .signUp .enterCode .enterInput input {
+  border: 1px solid #3F3D56;
+  width: 20%;
+  height: 50px;
+  text-align: center;
+}
+
+.MotherSignUp_ .signUp .signUpBtn {
+  width: 100%;
+  background-color: #1EA83C;
+  color: #fff;
+  height: 4em;
+  margin-bottom: 1em;
+}
+
+.MotherSignUp_ .signUp #back {
+  text-align: right;
+  font-style: normal;
+}
+
+.MotherSignUp_ svg {
+  width: 20px;
+}
+
+.MotherSignUp_ .greenText {
+  color: #1EA83C;
+}
+
 @media screen and (min-width: 720px) {
   h2 {
     margin: 0 0 30px 0;
@@ -622,6 +720,8 @@ footer .foot {
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    /* Header ends */
+    /* Home Begins */
   }
   #scrollTop:hover {
     background-color: #2F2E41;
@@ -692,6 +792,7 @@ footer .foot {
     width: 655px;
     height: 658px;
   }
+  /* About Begins */
   .about {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -769,45 +870,61 @@ footer .foot {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
   }
+  /* Features Begins */
   .features {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     width: 100%;
-    height: auto;
-    padding: 2em 7em 0 7em;
-    background: rgba(30, 168, 60, 0.1);
+    height: 100vh;
+    background-color: rgba(30, 168, 60, 0.1);
   }
   .features .lead {
-    width: 50%;
     text-align: center;
+    width: 40%;
+    line-height: 1.3em;
   }
-  .features div .featureSavings {
+  .features .sliderContainer {
+    height: 100vh;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    overflow: hidden;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  .features .sliderContainer .slide {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    justify-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    margin: 0 0  20px 0;
+    max-height: 100vh;
+    width: 100vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 1rem 8rem 2rem 8rem;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
-  .features div .featureSavings span h4 {
-    margin: 0 0 20px 0;
+  .features .sliderContainer .slide span {
+    line-height: 1.3em;
+    margin: auto;
   }
-  .features div .featureSavings span p {
-    width: 50%;
+  .features .sliderContainer .slide span h4 {
+    padding-bottom: 2rem;
   }
-  .features .featureInvestment {
-    margin-bottom: 0;
+  .features .grabbing {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+  }
+  .features .grabbing .slide img {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   .features img {
     width: 355px;
@@ -816,8 +933,12 @@ footer .foot {
   }
   .features .money {
     display: block;
-    width: 20%;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
+  /* Selling Point Begins */
   .sellingPoint {
     display: -ms-grid;
     display: grid;
@@ -909,6 +1030,7 @@ footer .foot {
     width: 70%;
     height: auto;
   }
+  /* Feedback Begins */
   .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -950,6 +1072,7 @@ footer .foot {
   .feedback .poweredBy img {
     margin: 0 30px;
   }
+  /* Download Begins */
   .download {
     background-color: #1EA83C;
     color: white;
@@ -991,6 +1114,80 @@ footer .foot {
   }
   .download span .btn-dark:hover {
     background-color: black;
+  }
+  /*Sign Up Begins */
+  .MotherSignUp_ {
+    width: 40%;
+    padding: 2em 1em;
+    margin: auto;
+    color: white;
+    background-color: #1EA83C;
+  }
+  .MotherSignUp_ .signUp {
+    width: 90%;
+    margin: auto;
+  }
+  .MotherSignUp_ .signUp .signBold {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 1.2em 0 0.5em 0;
+  }
+  .MotherSignUp_ .signUp .form-group {
+    color: white;
+  }
+  .MotherSignUp_ .signUp .form-group label {
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 100%;
+  }
+  .MotherSignUp_ .signUp .form-group input {
+    border-bottom: 1px solid white;
+    width: 100%;
+    color: white;
+    background-color: #1EA83C;
+  }
+  .MotherSignUp_ .signUp .form-group .eye {
+    text-align: right;
+  }
+  .MotherSignUp_ .signUp .form-group .eye .fa-eye {
+    display: none;
+  }
+  .MotherSignUp_ .signUp .form-group .padlock {
+    text-align: right;
+  }
+  .MotherSignUp_ .signUp .form-group .padlock .fa-unlock-alt {
+    display: none;
+  }
+  .MotherSignUp_ .signUp .form-group .lead {
+    font-size: 10px;
+    margin-top: 0.2em;
+  }
+  .MotherSignUp_ .signUp .enterCode .enterInput {
+    text-align: center;
+    margin-bottom: 3em;
+  }
+  .MotherSignUp_ .signUp .enterCode .enterInput input {
+    border: 1px solid #3F3D56;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+  }
+  .MotherSignUp_ .signUp .signUpBtn {
+    width: 100%;
+    background-color: #3F3D56;
+    color: #fff;
+    height: 4em;
+    margin-bottom: 1em;
+  }
+  .MotherSignUp_ svg {
+    width: 20px;
+    color: white;
+  }
+  .MotherSignUp_ .greenText {
+    color: white;
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
