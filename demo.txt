@@ -1,0 +1,27 @@
+Javascript Modal Animation
+
+    if (emails.value == '') {
+        invalid.innerHTML = errMessage
+        invalid.style.display = 'inline'
+    } else {
+        invalid.style.display = 'none'
+        emails.value = ""
+        const moveUp = () => {
+            pos++
+            modal.style.bottom = `${pos}vh`
+            modal.style.display = 'flex'
+            if (modal.style.bottom == '50vh') {
+                idDown = setInterval(moveDown, speed)
+                clearInterval(idUp)
+            }
+        }
+        const moveDown = () => {
+            pos--
+            modal.style.bottom = `${pos}vh`
+            if (modal.style.bottom == '-75vh') {
+                clearInterval(idDown)
+                modal.style.display = 'none'
+            }
+        }
+        idUp = setInterval(moveUp, speed);
+    }
